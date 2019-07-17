@@ -11,6 +11,12 @@ spring:
             - '/{profile}'
             - '/{profile}/{application}'
           default-label: master
+  rabbitmq:
+    host: localhost
+    virtual-host: /
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
