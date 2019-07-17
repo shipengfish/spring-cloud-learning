@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri:
+
+      server:
+        git:
+          uri:
+
