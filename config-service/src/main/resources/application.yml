@@ -6,11 +6,11 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:shipengfish/spring-cloud-learning.git
+          uri: git@github.com:shipengfish/config-repo.git
           search-paths:
-            - '/config-repo'
             - '/{profile}'
             - '/{profile}/{application}'
+          default-label: master
 
 eureka:
   client:

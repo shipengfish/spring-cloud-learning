@@ -6,8 +6,14 @@ spring:
     name: user-service
   cloud:
     config:
-      uri: localhost:8888
+#      uri: http://localhost:8888
       profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-service
+  profiles:
+    active: dev
 
 eureka:
   client:

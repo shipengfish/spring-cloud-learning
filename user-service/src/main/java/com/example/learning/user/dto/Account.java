@@ -1,8 +1,8 @@
-package com.example.learning.user.controller;
+package com.example.learning.user.dto;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 /**
  * @author shipengfish
@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Configuration;
  * @since 1.0
  */
 @Data
+@Component
+@ConfigurationProperties(prefix = "account")
 public class Account {
     private String name;
     private String password;
