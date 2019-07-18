@@ -17,12 +17,6 @@ spring:
           default-label: master
           username: shipengfish
           password: '{cipher}AQBpVowZFtT5a244DJm0rnreanHTPreERE3GfPuOGNV8DtB56nMz6D8M8/6pQ1eAHKzsutqoJ9wyBeaQ+YMTQhoq0/0Ft94OXKS1HAdoMouLSE1pl56nCa75ngWGdJdUjM/WmEg1VgXMpDUlL+EPug/uTvD139AqVwRQhiI0/waIAErnK2vH1ohnGhqF0MWr+pOSpEBYrz81UUd33ELpJb2THqRqbPBzhFTjuJkChedtb1s3lABBu4y+VC8V4ZIcFlye0nzy2r5fblfrFIVCJ3/jowjQJibcXXv3Ai4B3N/NED5scYEIpFGN9v3P6c7AXM2G2VEZWmVsJTbXDxZRdopGjSOi3T3v937ZtGHQaa1SEtO/mJ9QeQbDPZR+NmTBBzs='
-  rabbitmq:
-    host: localhost
-    virtual-host: /
-    port: 5672
-    username: guest
-    password: '{cipher}AQCMMR2lVrdj+V+1scsTB8YhiVRVAdteR7AZB88sO/lqYBQ+IVD3r8IcJUDrpoWEoVysqHzHA+ptl5C546EPwUoKmmP8qA7UjbMr5cq06x0Cz6imanZyDjMoxzDrXwsGGjM/RsW4bVmyCyuPGbYMQNT+3ITc2ji632rfdLJbPzE/lphkHUiW53V89bZ0ivZem3Y8CIQWbdUXnOO0gIu6Iy52cfVSPkpxxY0CtTUOF2yIHAzFKE4veY0Fc0JqhyrZIQ1IyZ+DVZ/xLKCxSSJ62gr5qgmylxPOs4qg4fie0KitYkYQXbsysJrUcFlgU79Q6KIF04Sfla/5E5L5qrR7MPuhPbmy6sEdpfdy1hbaZssRerpboyP1VqsMcbn09hePB/g='
 
 eureka:
   client:

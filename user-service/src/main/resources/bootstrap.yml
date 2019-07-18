@@ -4,9 +4,12 @@ server:
 spring:
   application:
     name: user-service
+  profiles:
+    active: dev
+
+  # cloud config config
   cloud:
     config:
-#      uri: http://localhost:8888
       profile: dev
       label: master
       discovery:
@@ -15,25 +18,17 @@ spring:
       fail-fast: true
       username: admin
       password: admin
-  profiles:
-    active: dev
 
-    # rabbitmqctl set_permissions -p / admin ".*" ".*" ".*" 需要给创建的用户赋予权限，否则会 Socket closed
-  rabbitmq:                                #本地环境不需要配置mq
-    host: localhost
-    port: 5672
-    virtual-host: /
-    username: guest
-    password: guest
-
+      retry:
+        max-attempts: 30
+        # 间隔乘数，默认1.1
+        multiplier: 1
+        # 初始重试间隔时间，默认1000ms
+        initial-interval: 3000
+        # 最大间隔时间，默认2000ms
+        max-interval: 60000
 
 eureka:
   client:
     service-url:
       defaultZone: http://admin:admin@localhost:8761/eureka
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
