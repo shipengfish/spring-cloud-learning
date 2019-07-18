@@ -2,11 +2,15 @@ server:
   port: 8888
 
 spring:
+  security:
+    user:
+      name: admin
+      password: admin
   cloud:
     config:
       server:
         git:
-          uri: git@github.com:shipengfish/config-repo.git
+          uri: https://github.com/shipengfish/config-repo.git
           search-paths:
             - '/{profile}'
             - '/{profile}/{application}'
@@ -18,7 +22,7 @@ spring:
     virtual-host: /
     port: 5672
     username: guest
-    password: guest
+    password: '{cipher}AQCMMR2lVrdj+V+1scsTB8YhiVRVAdteR7AZB88sO/lqYBQ+IVD3r8IcJUDrpoWEoVysqHzHA+ptl5C546EPwUoKmmP8qA7UjbMr5cq06x0Cz6imanZyDjMoxzDrXwsGGjM/RsW4bVmyCyuPGbYMQNT+3ITc2ji632rfdLJbPzE/lphkHUiW53V89bZ0ivZem3Y8CIQWbdUXnOO0gIu6Iy52cfVSPkpxxY0CtTUOF2yIHAzFKE4veY0Fc0JqhyrZIQ1IyZ+DVZ/xLKCxSSJ62gr5qgmylxPOs4qg4fie0KitYkYQXbsysJrUcFlgU79Q6KIF04Sfla/5E5L5qrR7MPuhPbmy6sEdpfdy1hbaZssRerpboyP1VqsMcbn09hePB/g='
 
 eureka:
   client:
