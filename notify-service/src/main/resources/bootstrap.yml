@@ -1,0 +1,37 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: notify-service
+  cloud:
+    config:
+#      uri: http://localhost:8888
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-service
+      fail-fast: true
+  profiles:
+    active: dev
+
+    # rabbitmqctl set_permissions -p / admin ".*" ".*" ".*" 需要给创建的用户赋予权限，否则会 Socket closed
+  rabbitmq:                                #本地环境不需要配置mq
+    host: localhost
+    port: 5672
+    virtual-host: /
+    username: guest
+    password: guest
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

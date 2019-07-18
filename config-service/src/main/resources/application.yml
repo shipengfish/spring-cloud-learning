@@ -11,6 +11,8 @@ spring:
             - '/{profile}'
             - '/{profile}/{application}'
           default-label: master
+          username: shipengfish
+#          password: '{cipher}AQCVxbEtNcXx6+NBZEuBtzCsEMK5tnL09FE+DRnSg4A14tczDYBLoAR3iZsm+wExYwyjSnaoZH2TXBG/kzkbCfg0lCbn5gywqqH5N9EPSTOobt+ygDASRt/6lRT8dreFpNChqH/H4Ga+OnJ+Zv6fpGsdWhKvFFz+kG9cAvVEBkPnLPWr7iPhFCg4m2YpxgI0yRW/ANX98UMj6PyBZDRn8cAq1MrgXKhlRbaQFEzR4iwW3HJcxNVjTPRuu/6zFBs28VBFULRlGf2qJr6/kXL/n0oTCGJVSRuyDmn4NZiUgf+22vvYg+1Bg0XIACrx1vK/yZi30JZIYFVjVpwPgI8CnMram+ig411OI/pTkWuTQzOhvTk3I7jFAZAFGzZ9HT2OD6o=%'
   rabbitmq:
     host: localhost
     virtual-host: /

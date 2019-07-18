@@ -7,3 +7,9 @@ management:
     web:
       exposure:
         include: "*"
+encrypt:
+  keyStore:
+    location: classpath:/server.jks
+    password: letmein
+    alias: ysptestkey
+    secret: changeme
