@@ -12,7 +12,7 @@ spring:
             - '/{profile}/{application}'
           default-label: master
           username: shipengfish
-#          password: '{cipher}AQCVxbEtNcXx6+NBZEuBtzCsEMK5tnL09FE+DRnSg4A14tczDYBLoAR3iZsm+wExYwyjSnaoZH2TXBG/kzkbCfg0lCbn5gywqqH5N9EPSTOobt+ygDASRt/6lRT8dreFpNChqH/H4Ga+OnJ+Zv6fpGsdWhKvFFz+kG9cAvVEBkPnLPWr7iPhFCg4m2YpxgI0yRW/ANX98UMj6PyBZDRn8cAq1MrgXKhlRbaQFEzR4iwW3HJcxNVjTPRuu/6zFBs28VBFULRlGf2qJr6/kXL/n0oTCGJVSRuyDmn4NZiUgf+22vvYg+1Bg0XIACrx1vK/yZi30JZIYFVjVpwPgI8CnMram+ig411OI/pTkWuTQzOhvTk3I7jFAZAFGzZ9HT2OD6o=%'
+          password: '{cipher}AQBpVowZFtT5a244DJm0rnreanHTPreERE3GfPuOGNV8DtB56nMz6D8M8/6pQ1eAHKzsutqoJ9wyBeaQ+YMTQhoq0/0Ft94OXKS1HAdoMouLSE1pl56nCa75ngWGdJdUjM/WmEg1VgXMpDUlL+EPug/uTvD139AqVwRQhiI0/waIAErnK2vH1ohnGhqF0MWr+pOSpEBYrz81UUd33ELpJb2THqRqbPBzhFTjuJkChedtb1s3lABBu4y+VC8V4ZIcFlye0nzy2r5fblfrFIVCJ3/jowjQJibcXXv3Ai4B3N/NED5scYEIpFGN9v3P6c7AXM2G2VEZWmVsJTbXDxZRdopGjSOi3T3v937ZtGHQaa1SEtO/mJ9QeQbDPZR+NmTBBzs='
   rabbitmq:
     host: localhost
     virtual-host: /
