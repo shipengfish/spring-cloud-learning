@@ -1,15 +1,15 @@
 server:
-  port: 8000
+  port: 9415
 
 spring:
   application:
-    name: user-service
+    name: trace-service
   profiles:
     active: dev
 
-  # cloud config config
   cloud:
     config:
+#      uri: http://localhost:8888
       profile: dev
       label: master
       discovery:
@@ -27,14 +27,6 @@ spring:
         initial-interval: 3000
         # 最大间隔时间，默认2000ms
         max-interval: 60000
-  zipkin:
-    base-url: http://localhost:9411
-    enabled: true
-    sender:
-      type: web
-  sleuth:
-    sampler:
-      probability: 1
 
 eureka:
   client:
